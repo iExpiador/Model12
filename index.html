@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <div class="col-content right">
+      <div class="">
+        <div class="#">
+        </div>
+        <div class="#">
+        </div>
+      </div>
+    </div>
+    <button class="toggle-play">
+      <i id="sound" class="material-icons" style="font-size:41px">music_note</i>
+    </button>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>BrunoT space</title>
+   <style>
+        /* Estilo para tornar o iframe em tela cheia */
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: -1; /* Coloca o iframe atrás de todo o conteúdo */
+        }
+
+        /* Estilos adicionais para o conteúdo sobre o iframe */
+        .content {
+            position: relative;
+            z-index: 1; /* Certifica-se de que o conteúdo esteja à frente do iframe */
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://brunovdlc.github.io/BrunoTsad/" frameborder="0"></iframe>
+
+    <div class="content">
+       
+    </div>
+</head>
+
+ <style type="text/css">
+
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url();
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+a,a:visited,a:hover,a:active,a:link { 
+  text-decoration: none;
+  color: inherit;
+}
+
+.nickname:hover {
+cursor: url(./images/instagram16x16.cur), auto;
+}
+
+
+.profilecard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -175px;
+  margin-top: -187px;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 374px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência */
+  backdrop-filter: blur(5px); /* Aplicando o desfoque ao fundo */
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.50);
+  overflow: hidden;
+}
+
+.profiletop {
+      position: absolute;
+      width: 100%;
+      height: 140px;
+      flex-shrink: 0;
+      border-radius: 15px 15px 0px 0px;
+      background-image: url(images/capa.gif); 
+      background-size: cover; 
+      background-repeat: no-repeat;
+  
+}
+   /** Estilo foto redonda com borda "branca" **/
+.foto {
+    top: 92px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    width: 86px;
+    height: 86px;
+    border-radius: 96px;
+    border: 5px solid #FFF;
+    background-image: url(images/ft.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.foto:hover {
+    animation: giragira 5000ms infinite forwards;
+  }
+.nomidade {
+    top: 212px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 0px 0.5px 1px 9px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16.5px;
+   }
+
+.namestats {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #f0e130, #1e90ff, #ff6b6b);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientSlide 5s infinite;
+}
+
+@keyframes gradientSlide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+.idade { 
+  font-family: Kumbh Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+   }
+
+.iddexat { 
+  top: 343px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;    
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+.linha { 
+  top: 285px;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  flex-shrink: 0;
+  }
+
+.socialblock {
+  display: flex;
+  top: 310px;
+  justify-content: space-evenly;
+  position: absolute;       
+  width: 80%;
+  height: 42px;
+  }
+
+.social { 
+ display: inline-flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
+ }
+
+.redes {
+  font-family: Kumbh Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+   }
+  
+
+
+@keyframes giragira {
+    0% {
+      transform: scale(90%);
+    }
+    25%{
+      transform: scale(110%);
+    }
+    50% {
+      transform: scale(90%) rotate(360deg);
+    }
+    75% {
+      transform: scale(110%) rotate(360deg);
+    }
+    100% {
+      transform: scale(90%) rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+.profilecard {
+      width: 326px;
+      margin-left: -163px;
+  }
+} 
+
+  </style>
+
+
+<script>
+<div class="col-content right">
+      <div class="">
+        <div class="#">
+        </div>
+        <div class="#">
+        </div>
+      </div>
+    </div>
+    <button class="toggle-play">
+      <i id="sound" class="material-icons" style="font-size:41px">music_note</i>
+    </button>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="musica1.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<body>
+  <!-- write your html structure here -->
+  <div class="ovaltop"></div>
+
+  <div class="profilecard">
+    <div class="profiletop"></div>
+      <div class="foto"></div>
+      <div class="nomidade">
+        <div class="namestats"><a class="nickname" href="xat.com/vto" target="_blank">NÃO PERMITA QUE AS ESCOLHAS DOS OUTROS MUDE VOCÊ.</a> </div>
+        <div class="idade" id="idade"></div>
+           
+    </div>
+    <div class="iddexat">BrunoT (202020)</div>
+    <div class="linha"></div>
+    
+  </div>
+
+  <div class="ovalbottom"></div>
+
+</body>
+ <script src="musica1.js"></script>
+</html>
