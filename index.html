@@ -265,6 +265,23 @@ cursor: url(./images/instagram16x16.cur), auto;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="musica1.js"></script>
+
+  <script>
+  // Bloquear clic derecho
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Bloquear atajos de teclado comunes
+  document.onkeydown = function(e) {
+    if (
+      e.ctrlKey && (e.key === 'u' || e.key === 'U') || // Ctrl + U
+      e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i') || // Ctrl + Shift + I
+      e.key === 'F12' // F12
+    ) {
+      return false;
+    }
+  };
+</script>
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
